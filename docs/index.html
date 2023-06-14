@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Archive Bookmarklet - View the current URL on archive.ph</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A bookmarklet to view the archive.ph version of the current URL."
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: rgb(2 6 23);
+        color: rgb(226 232 240);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin: 0 0 24px 0;
+        text-align: center;
+      }
+
+      h2 {
+        color: rgb(203 213 225);
+        font-size: 24px;
+        margin: 0 0 18px 0;
+        text-align: center;
+      }
+
+      h3 {
+        color: rgb(203 213 225);
+        font-size: 18px;
+        margin: 0 0 8px 0;
+      }
+
+      p {
+        color: rgb(148 163 184);
+        margin: 0 0 24px 0;
+      }
+
+      a {
+        color: rgb(56 189 248);
+      }
+
+      a:hover,
+      a:active {
+        color: rgb(125 211 252);
+      }
+
+      ul {
+        margin: 0 0 24px 0;
+      }
+
+      li {
+        color: rgb(148 163 184);
+        margin: 0 0 12px 24px;
+      }
+
+      input[type="text"] {
+        background: rgb(51 65 85);
+        border: 1px solid rgb(100 116 139);
+        border-radius: 4px;
+        color: rgb(203 213 225);
+        display: block;
+        font-size: 16px;
+        margin: 16px 0 8px 0;
+        width: 100%;
+        padding: 8px;
+      }
+
+      main {
+        background: rgb(15 23 42);
+        border-radius: 16px;
+        margin: 32px auto 0 auto;
+        max-width: 600px;
+        padding: 32px;
+      }
+
+      .link-bookmarklet {
+        display: block;
+        margin: 16px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Archive Bookmarklet</h1>
+      <h2>
+        View the
+        <a href="https://archive.ph">archive.ph</a> version of the current URL.
+      </h2>
+      <h3>Installation</h3>
+      <ul>
+        <li>
+          <strong>Desktop</strong>: Click and drag this link in to your
+          browser's bookmarks bar:
+          <a
+            href="javascript:(function(){window.location = `https://archive.ph/submit/?url=${encodeURIComponent(window.location.href)}`})();"
+            class="link-bookmarklet"
+            >View on archive.ph</a
+          >
+        </li>
+        <li>
+          <strong>Mobile</strong>: The easiest option is to sync your desktop
+          and mobile bookmarks so the bookmarklet added on a desktop browser
+          appears on your mobile device. Another option is to bookmark this page
+          on your mobile device, then edit it and replace the URL with this code
+          snippet:
+          <input
+            type="text"
+            value="javascript:(function(){window.location = `https://archive.ph/submit/?url=${encodeURIComponent(window.location.href)}`})();"
+            readonly
+          />
+        </li>
+      </ul>
+      <h3>Usage</h3>
+      <p>
+        When you're viewing a webpage that you want to see on archive.ph, just
+        click or tap the bookmarklet.
+      </p>
+    </main>
+  </body>
+</html>

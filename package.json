@@ -1,0 +1,15 @@
+{
+  "name": "archive-bookmarklet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mattdeco/archive-bookmarklet",
+  "author": "Matt Rosenzweig <m@tripleoptic.net>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel docs/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.2",
+    "prettier": "^2.8.8"
+  }
+}
