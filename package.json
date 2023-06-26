@@ -9,7 +9,7 @@
     "start": "parcel docs/index.html"
   },
   "devDependencies": {
-    "parcel": "^2.9.2",
+    "parcel": "^2.9.3",
     "prettier": "^2.8.8"
   }
 }
